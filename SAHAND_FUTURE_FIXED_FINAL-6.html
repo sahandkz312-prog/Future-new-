@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>SAHAND FUTURE</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#000;color:#fff;font-family:Arial,sans-serif;min-height:100vh;overflow-x:hidden;position:relative}body::before{content:"";position:fixed;inset:-50%;z-index:-1;background:radial-gradient(circle at 20% 30%,rgba(255,255,255,.10),transparent 22%),radial-gradient(circle at 80% 70%,rgba(255,255,255,.07),transparent 25%),radial-gradient(circle at 50% 50%,rgba(120,120,255,.05),transparent 28%);animation:bgMove 12s ease-in-out infinite alternate;transform:scale(1.2)}body::after{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(circle at 10% 80%,rgba(255,255,255,.08) 0 1px,transparent 2px),radial-gradient(circle at 70% 20%,rgba(255,255,255,.08) 0 1px,transparent 2px),radial-gradient(circle at 40% 60%,rgba(255,255,255,.06) 0 1px,transparent 2px);background-size:180px 180px,240px 240px,130px 130px;animation:starsMove 18s linear infinite}@keyframes bgMove{0%{transform:scale(1.2) translate(-2%,-1%) rotate(0deg)}50%{transform:scale(1.3) translate(2%,2%) rotate(2deg)}100%{transform:scale(1.2) translate(-1%,3%) rotate(-2deg)}}@keyframes starsMove{from{transform:translate(0,0)}to{transform:translate(40px,25px)}}.container{max-width:900px;margin:auto;padding:28px 18px 45px}h1{text-align:center;letter-spacing:5px;margin:8px 0 25px}.card{background:#0d0d0f;border:1px solid #242428;border-radius:22px;padding:20px;margin-bottom:20px;box-shadow:0 12px 35px #000}.chat{height:280px;overflow:auto;margin-bottom:14px}.msg{padding:10px 14px;margin:8px 0;border-radius:14px;background:#18181c}.bot{border:1px solid #333}.user{background:#fff;color:#000}.form{display:flex;gap:8px}input{flex:1;background:#17171b;border:1px solid #333;color:#fff;border-radius:13px;padding:13px;font-size:15px;outline:none}button{border:0;border-radius:13px;padding:12px 18px;background:#fff;color:#000;cursor:pointer;font-weight:700}.clock{text-align:center;font-size:48px;font-weight:700;letter-spacing:3px;direction:ltr}.by{text-align:center;color:#888;font-size:14px;margin-top:5px;direction:ltr}.teaser{padding:30px;text-align:center;font-size:22px;cursor:pointer;border:1px solid #29292e;border-radius:18px;background:#151519}.overlay{position:fixed;inset:0;background:rgba(0,0,0,.9);display:flex;align-items:center;justify-content:center;z-index:20;padding:20px}.popup{width:min(430px,95vw);background:#111;border:1px solid #444;border-radius:22px;padding:28px;text-align:center;box-shadow:0 20px 60px #000}.popup h2{margin-top:0}.popup2{display:none}.choices{display:flex;gap:10px;justify-content:center;margin-top:20px}.choices button{flex:1}.choices .stay{background:#222;color:#fff;border:1px solid #444}.choices .close{background:#fff;color:#000}.photoOverlay{position:fixed;inset:0;background:rgba(0,0,0,.95);display:none;align-items:center;justify-content:center;z-index:30;padding:18px;overflow:auto}.photoBox{width:min(900px,96vw);display:flex;flex-direction:column;gap:16px;position:relative}.photoBox img{width:100%;border-radius:16px;display:block}.photoClose{position:sticky;top:0;align-self:flex-end;width:42px;height:42px;border-radius:50%;font-size:28px;padding:0;z-index:2}.contact{text-align:center;margin-top:25px;color:#aaa;font-size:14px}.contact a{color:#fff;text-decoration:none;font-weight:700}
+</style><style id="porsejoo-style">
+.porsejoo-btn{margin:8px 0 20px;width:100%;background:#111;color:#fff;border:1px solid #333;border-radius:16px;padding:15px;font-size:18px;font-weight:700;cursor:pointer}.porsejoo-overlay{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}.porsejoo-box{width:min(430px,95vw);background:#111;border:1px solid #444;border-radius:22px;padding:28px;text-align:center}.porsejoo-options{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:20px}.porsejoo-options button{padding:13px 5px;font-size:18px}.porsejoo-options button.selected{font-weight:900;background:#1683ff;color:#fff;box-shadow:0 0 0 2px #1683ff inset}.porsejoo-close{margin-top:18px;background:#222;color:#fff;border:1px solid #444}
+</style><style id="sf-bg-effects">
+.sf-bg-effects{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;background:radial-gradient(circle at 100% 0%,rgba(255,255,255,.22),transparent 35%),radial-gradient(circle at 0% 100%,rgba(255,255,255,.15),transparent 38%)}
+.sf-light{position:absolute;width:175%;height:120px;top:-55px;right:-60%;transform:rotate(34deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.04) 30%,rgba(255,255,255,.2) 50%,rgba(255,255,255,.04) 70%,transparent);filter:blur(12px);animation:sfLightMove 7s ease-in-out infinite alternate}
+@keyframes sfLightMove{0%{transform:translate(22%,-5%) rotate(34deg);opacity:.4}100%{transform:translate(-32%,48%) rotate(34deg);opacity:.85}}
+.sf-butterfly{position:absolute;left:-90px;filter:drop-shadow(0 0 8px rgba(255,255,255,.75));opacity:.9;animation:sfFly linear infinite;will-change:transform}
+.sf-b1{top:18%;font-size:24px;animation-duration:13s;animation-delay:-2s}.sf-b2{top:42%;font-size:31px;animation-duration:17s;animation-delay:-8s}.sf-b3{top:66%;font-size:20px;animation-duration:11s;animation-delay:-5s}.sf-b4{top:82%;font-size:27px;animation-duration:15s;animation-delay:-11s}.sf-b5{top:30%;font-size:18px;animation-duration:19s;animation-delay:-14s}
+@keyframes sfFly{0%{transform:translate(-10vw,0) rotate(-8deg)}20%{transform:translate(20vw,-28px) rotate(10deg)}40%{transform:translate(43vw,18px) rotate(-7deg)}60%{transform:translate(67vw,-24px) rotate(9deg)}80%{transform:translate(88vw,14px) rotate(-5deg)}100%{transform:translate(115vw,-12px) rotate(8deg)}}
+.sf-virgin{position:fixed;bottom:12px;left:50%;transform:translateX(-50%);z-index:20;color:#fff;font:600 13px Arial,sans-serif;letter-spacing:3px;opacity:.75;text-shadow:0 0 8px rgba(255,255,255,.45);pointer-events:none}
+</style>
+</head>
+<body>
+<div class="sf-bg-effects" aria-hidden="true"><div class="sf-light"></div><div class="sf-butterfly sf-b1">🦋</div><div class="sf-butterfly sf-b2">🦋</div><div class="sf-butterfly sf-b3">🦋</div><div class="sf-butterfly sf-b4">🦋</div><div class="sf-butterfly sf-b5">🦋</div></div>
+<div class="sf-virgin">virgin ۲</div>
+<div class="container"><h1>SAHAND FUTURE</h1>
+<div class="card"><div class="chat-title">SUPER AI</div><div class="chat" id="chat"><div class="msg bot">سلام</div></div><form class="form" id="chatForm"><input id="message" placeholder="پیامت رو بنوی..." autocomplete="off"><button id="sendBtn">ارسال</button></form></div>
+<button class="porsejoo-btn" onclick="openPorsejoo()">پرس و جو</button><div class="porsejoo-overlay" id="porsejooOverlay"><div class="porsejoo-box"><h2>منو چنتا دوست داری ؟؟؟</h2><div class="porsejoo-options"><button onclick="selectPorsejoo(10,this)">10</button><button onclick="selectPorsejoo(9,this)">9</button><button onclick="selectPorsejoo(8,this)">8</button><button onclick="selectPorsejoo(7,this)">7</button><button onclick="selectPorsejoo(6,this)">6</button><button onclick="selectPorsejoo(5,this)">5</button><button onclick="selectPorsejoo(4,this)">4</button><button onclick="selectPorsejoo(3,this)">3</button><button onclick="selectPorsejoo(2,this)">2</button><button onclick="selectPorsejoo(1,this)">1</button></div><button class="porsejoo-close" onclick="closePorsejoo()">بستن</button></div></div>
+<div class="card"><div class="clock" id="clock">00:00:00</div><div class="by">by future</div></div><div class="contact">For communication with future — <a href="https://t.me/voidnurture" target="_blank" rel="noopener">@voidnurture</a></div><div style="text-align:center;color:#777;margin-top:18px;font-size:13px">view 167</div>
+<div class="card"><div class="teaser" onclick="openPhotos()">✨ اینجا نیازت میشه... کلیک کن</div></div><div class="photoOverlay" id="photoOverlay" onclick="closePhotos()"><div class="photoBox" onclick="event.stopPropagation()"><button class="photoClose" onclick="closePhotos()">×</button><img src="1000063985.jpg"><img src="1000063982.jpg"><img src="1000063979.jpg"></div></div><div class="card" style="text-align:center;direction:ltr"><a href="https://t.me/voidnurture" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;font-weight:700">For communication with future — @voidnurture</a></div></div>
+
+<!-- MUSIC POPUP -->
+<div class="overlay" id="musicPopup"><div class="popup"><h2>🎵 آهنگ دوست داری؟</h2><button id="yesMusic" style="width:100%;margin-top:15px">آره</button></div></div>
+<audio id="bgMusic" loop preload="auto"><source src="https://uploadkon.ir/uploads/66f116_26Yeat-–-Run-Thëy-Mouth.m4a" type="audio/mp4"></audio><div style="position:fixed;right:18px;bottom:18px;z-index:50"><button id="musicToggle" style="min-width:125px;border:1px solid #444;background:#111;color:#fff;box-shadow:0 8px 25px #000">⏸ توقف آهنگ</button></div>
+
+<div class="overlay popup2" id="popup2"><div class="popup"><h2>وقت کمه!</h2><p>می‌خوای پنجره بسته بشه؟</p><div class="choices"><button class="stay" onclick="stay()">نه</button><button class="close" onclick="closePopup()">باشه</button></div></div></div>
+<script>
+const chat=document.getElementById('chat'),chatForm=document.getElementById('chatForm'),messageInput=document.getElementById('message'),sendBtn=document.getElementById('sendBtn');let aiReplies=0,chatLocked=false;chatForm.addEventListener('submit',e=>{e.preventDefault();if(chatLocked)return;let t=messageInput.value.trim();if(!t)return;chat.insertAdjacentHTML('beforeend','<div class="msg user">'+esc(t)+'</div>');aiReplies++;let reply=aiReplies===1?'سلام':aiReplies===2?'چخبرا':aiReplies===3?'شرمنده فعلا نمیشه':'';if(reply)chat.insertAdjacentHTML('beforeend','<div class="msg bot">'+reply+'</div>');messageInput.value='';if(aiReplies>=3){chatLocked=true;messageInput.disabled=true;sendBtn.disabled=true;messageInput.placeholder='چت قفل شد';sendBtn.style.opacity='.45';messageInput.style.opacity='.45'}chat.scrollTop=chat.scrollHeight});</script><script>function openPorsejoo(){document.getElementById('porsejooOverlay').style.display='flex'}function closePorsejoo(){document.getElementById('porsejooOverlay').style.display='none'}function selectPorsejoo(n,el){document.querySelectorAll('.porsejoo-options button').forEach(b=>b.classList.remove('selected'));document.querySelectorAll('.porsejoo-options button').forEach(b=>{if(b.textContent==='10')b.classList.add('selected')})}</script>
+<script>
+const music=document.getElementById('bgMusic');
+const musicPopup=document.getElementById('musicPopup');
+const musicToggle=document.getElementById('musicToggle');
+const yesMusic=document.getElementById('yesMusic');
+
+function showMusicError(){
+  alert('آهنگ از لینک فعلی قابل پخش نیست. لینک فایل آهنگ مشکل دارد.');
+}
+
+yesMusic.addEventListener('click', async function(){
+  try{
+    music.load();
+    await music.play();
+    musicPopup.style.display='none';
+    musicToggle.textContent='⏸ توقف آهنگ';
+  }catch(err){
+    showMusicError();
+  }
+});
+
+musicToggle.addEventListener('click', async function(){
+  try{
+    if(music.paused){
+      await music.play();
+      musicToggle.textContent='⏸ توقف آهنگ';
+    }else{
+      music.pause();
+      musicToggle.textContent='▶️ پخش آهنگ';
+    }
+  }catch(err){
+    showMusicError();
+  }
+});
+
+music.addEventListener('error', showMusicError, {once:true});
+setTimeout(()=>{document.getElementById('popup2').style.display='flex'},5000);
+function closePopup(){document.getElementById('popup2').style.display='none'}
+function stay(){}
+function openPhotos(){document.getElementById('photoOverlay').style.display='flex'}
+function closePhotos(){document.getElementById('photoOverlay').style.display='none'}
+</script>
+</body></html>
